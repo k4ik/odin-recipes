@@ -132,3 +132,27 @@ body {
     transition: .2s;
     background-color: var(--main-color);
 }
+
+/* FOOTER */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #000;
+}
+
+.footer-copy{
+    font-size: 14px;
+    color: #fff;
+}
+
+.footer-images{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-images img{
+    width: 20px;
+    height: 20px;
+}
