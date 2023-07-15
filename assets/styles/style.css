@@ -6,10 +6,32 @@
 
 :root {
     --main-color: #F9A826;
-    --bg-color: #f1f1f1;
+    --bg-color: #fefefe;
 }
 
 body {
     background-color: var(--bg-color);
     font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.header-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header-list a{
+    color: #000;
+    text-decoration: none;
+}
+
+.header-list a:hover {
+    color: var(--main-color);
 }
