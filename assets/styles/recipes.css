@@ -7,6 +7,58 @@
     color: #fff;
 }
 
+.nav-button {
+    display: none;
+    border: 0;
+    width: 12px;
+    cursor: pointer;
+}
+
+.nav-button i {
+    color: #ffffff;
+    font-size: 28px;
+}
+
+.overlay {
+    width: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.9);
+    z-index: 9;
+    position: fixed;
+    left: 0;
+    top: 0;    
+    overflow-x: hidden;
+    transition: all 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+.overlay a:hover , .overlay a:hover{
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 25px;
+    right: 45px;
+    font-size: 60px;
+}
+
 .recipe-section {
     padding: 40px 0;
 }
@@ -29,4 +81,38 @@
 
 .recipe-list {
     padding: 0 100px;
+}
+
+@media screen and (max-width: 768px){
+    .nav-button {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .overlay a {
+        font-size: 20px;
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+
+    .recipe-title {
+        margin-bottom: 10px;
+    }
+
+    .recipe-image {
+        height: 200px;
+    }
+
+    .recipe-topics{
+        padding: 10px 20px;
+    }
+    
+    .recipe-list {
+        padding: 0 60px;
+    }
 }
