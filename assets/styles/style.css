@@ -40,6 +40,58 @@ html {
     color: var(--main-color);
 }
 
+.nav-button {
+    display: none;
+    border: 0;
+    width: 12px;
+    cursor: pointer;
+}
+
+.nav-button i {
+    color: var(--color-btn);
+    font-size: 28px;
+}
+
+.overlay {
+    width: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.9);
+    z-index: 9;
+    position: fixed;
+    left: 0;
+    top: 0;    
+    overflow-x: hidden;
+    transition: all 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+.overlay a:hover , .overlay a:hover{
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 25px;
+    right: 45px;
+    font-size: 60px;
+}
+
 /* HOME SECTION */
 
 .home {
@@ -170,4 +222,96 @@ html {
 .footer-images img{
     width: 20px;
     height: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    .home-image {
+        width: 350px;
+    }
+
+    .home {
+        gap: 0;
+        justify-content: center;
+    }
+
+    .home-title, .home-description {
+    width: 350px;
+    }
+
+    .recipes-card {
+        width: 300px;
+        height: 400px;
+    }
+
+    .recipes-cards {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .nav-button {
+        display: block;
+    }
+
+    .home-image, .header-list {
+        display: none;
+    }
+
+    .home {
+        gap: 0;
+        justify-content: center;
+    }
+
+    .home-title, .home-description {
+    width: 350px;
+    }
+
+    .recipes-card {
+        width: 180px;
+        height: 400px;
+    }
+
+    .recipes-cards {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .header-list {
+        display: none;
+    }
+
+    .overlay a {
+        font-size: 20px;
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+
+    .home-image {
+        display: none;
+    }
+
+    .home {
+        gap: 0;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .home-title, .home-description {
+        width: 250px;
+    }
+
+    .recipes-cards {
+        grid-template-columns: auto;
+    }
+
+    .recipes-card {
+        width: 230px;
+        height: 400px;
+
+    }
 }
