@@ -1,5 +1,6 @@
-<h1 style='text-align: center;'>Cook.</h1>
-<img src='https://cdn.discordapp.com/attachments/1113915346106204200/1130456635500920922/image.png' alt='project img' width='100%'>
+# Cook.
 
-<h2>Links</h2>
+![project img](https://cdn.discordapp.com/attachments/1113915346106204200/1130456635500920922/image.png)
+
+## Links
 - [Github Pages](https://k4ik.github.io/odin-recipes/)
