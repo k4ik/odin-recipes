@@ -12,6 +12,7 @@
     border: 0;
     width: 12px;
     cursor: pointer;
+    background-color: transparent;
 }
 
 .nav-button i {
@@ -86,6 +87,10 @@
 @media screen and (max-width: 768px){
     .nav-button {
         display: block;
+    }
+
+    .header {
+        flex-direction: row-reverse;
     }
 }
 
